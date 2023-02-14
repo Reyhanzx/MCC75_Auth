@@ -20,22 +20,24 @@ namespace projek1
                 Console.Clear();
 
                 Console.WriteLine("==SHOW USER==");
+                
+
+                    int i = 0;
                 foreach (User n in BUsers)
                 {
-                    if (n.id != 0)
-                    {
+                    i++;
                         Console.WriteLine("====================");
-                        Console.WriteLine("ID          : " + n.id);
+                        Console.WriteLine("ID          : "  + (i));
                         Console.WriteLine("Name        : " + n.FirstName + " " + n.LastName);
                         Console.WriteLine("Username    : " + n.Username);
                         Console.WriteLine("Password    : " + n.Password);
                         Console.WriteLine("====================");
-                    }
+                    
                 }
             
                 Console.WriteLine("\nMenu");
                 string[] menuEdit = { "Edit User", "Delete User", "Back" };
-                for (int i = 0; i < menuEdit.Length; i++)
+                for (i = 0; i < menuEdit.Length; i++)
                 {
                     Console.WriteLine($"{i + 1}. {menuEdit[i]}");
                 }
@@ -48,9 +50,9 @@ namespace projek1
                 {
                     case 1:
                         Console.Write("\nID yang ingin diubah: ");
+                         
 
 
-                      
                         
                             if (SUsers.id != null)
                             {

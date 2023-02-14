@@ -18,6 +18,7 @@ namespace projek1
             {
 
                 SUsers.id = 1;
+                
 
                 Console.Write("First Name : ");
                 string IFirstName = Console.ReadLine();
